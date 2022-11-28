@@ -8,11 +8,22 @@ public class GenerateBoard : MonoBehaviour
     [SerializeField] GameObject lightTile;
     [SerializeField] GameObject darkTile;
 
-    int tileCount;
+    int rowNumber = 1;
+    int columnNumber = 0;
+    enum columnLetter
+    {
+        A,
+        B,
+        C,
+        D,
+        E,
+        F,
+        G,
+        H
+    }
 
     void Start()
     {
-        tileCount = 0;
         GenerateGameBoard();
         //PlacePieces();
     }
@@ -33,10 +44,12 @@ public class GenerateBoard : MonoBehaviour
 
                 Vector2 location = new Vector2(-3.5f + column, -3.5f + row);
 
-                tile.name = $"{tileCount}";
+                tile.name = $"{(columnLetter)columnNumber}{rowNumber}";
                 Instantiate(tile, location, Quaternion.identity);
-                tileCount++;
+                rowNumber++;
             }
+            columnNumber++;
+            rowNumber = 1;
         }
     }
 }
