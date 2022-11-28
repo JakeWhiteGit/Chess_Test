@@ -320,6 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfa5025544081de4bab6bd38c35abdbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startingFEN: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
   lightTile: {fileID: 6510405047372369160, guid: 3b431ed409f1e3c428cdd8ca915ac776, type: 3}
   darkTile: {fileID: 6510405047372369160, guid: a38a0d3d5de6a294498470d3d936465e, type: 3}
 --- !u!4 &2069824712
