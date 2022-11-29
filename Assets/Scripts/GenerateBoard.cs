@@ -51,6 +51,8 @@ public class GenerateBoard : MonoBehaviour
         PlacePieces(fenTranslator.PiecePosition);
     }
 
+    //Horrible code for taking the first part of the fen notation and laying out the pieces
+    //with a giant switch statement
     void PlacePieces(string piecePosition)
     {
         int count = 0;
